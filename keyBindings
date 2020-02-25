@@ -1,0 +1,39 @@
+[
+	// Move cursor to end of word
+  // Move cursor to beginning of word
+	{ "keys": ["shift+space"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+	{ "keys": ["super+shift+space"], "command": "move", "args": {"by": "subwords", "forward": false} },
+
+	// ctrl + c kills program 
+	// {"keys": ["ctrl+c"], "command": "exec", "args": {"kill": true} },
+
+	// toggle comments with super+shift+c
+	{ "keys": ["super+shift+c"], 
+		"command": "toggle_comment", 
+		"args": { "block": false } },
+
+	// open REPL for R
+	{ "keys": ["super+r"],
+		"caption": "SublimeREPL: R",
+		"command": "run_existing_window_command", "args":
+		{
+			"id": "repl_r",
+			"file": "config/R/Main.sublime-menu"
+		}
+	},
+
+	// open REPL for Python
+	{ "keys": ["super+p"],
+		"caption": "SublimeREPL: Python",
+		"command": "run_existing_window_command", "args":
+		{
+			"id": "repl_python",
+			"file": "config/Python/Main.sublime-menu"
+		}
+	},
+
+	// run line to REPL
+	{ "keys": ["super+enter"], 
+		"command": "repl_transfer_current", 
+		"args": {"scope": "lines"}}
+]
