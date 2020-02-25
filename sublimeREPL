@@ -1,4 +1,9 @@
-#SubleimeREPL/config/python/Main.sublime-menu
+# SublimeREPL uses python 2.7 unless specified otherwise, 
+# here we just replace all instances of "python" with "python3"
+# wherever "cmd" appears
+
+# Located in the following file
+# SubleimeREPL/config/python/Main.sublime-menu
 
 [
      {
