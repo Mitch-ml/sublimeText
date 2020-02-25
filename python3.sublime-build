@@ -1,5 +1,5 @@
-# Save this to Tools/Build System/New Build System...
-# Needed to have Sublime Text default to python3
+// Save this to Tools/Build System/New Build System...
+// Needed to have Sublime Text default to python3
 
 {
  "cmd": ["/usr/local/bin/python3", "-u", "$file"],
